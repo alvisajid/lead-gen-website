@@ -3,8 +3,8 @@ import type { AgencyConfig } from './types';
 // Example B2B agency config — edit or replace with agency-specific data.
 export const agencyConfig: AgencyConfig = {
   agency: {
-    name: 'Lead Growth Agency',
-    tagline: 'Patient lead generation for service providers',
+    name: 'Provenli Solutions',
+    tagline: 'Predictable lead generation for service providers',
     logo: '/logo.svg',
     description:
       'We specialize in filling schedules for hair transplant clinics, dental practices, and other high-ticket service providers through proven paid ads and SEO strategies.',
@@ -17,9 +17,9 @@ export const agencyConfig: AgencyConfig = {
     avgRoi: '3.8x',
   },
   contact: {
-    email: 'hello@leadgrowth.example',
-    phone: '+1-555-555-0100',
-    calendlyUrl: 'https://calendly.com/leadgrowth/discovery-call', // Replace with your Calendly link
+    email: 'contact@provenli.com',
+    phone: '+91 91838 99188',
+    calendlyUrl: '', // TODO: Add your Calendly link when ready
   },
   services: [
     {

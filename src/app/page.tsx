@@ -44,45 +44,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Metrics Band */}
-      {metrics && (
-        <section className="bg-gray-900 text-white py-12 px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
-              <div>
-                <div className="text-3xl md:text-4xl font-bold">{metrics.leadsGenerated?.toLocaleString()}</div>
-                <p className="text-gray-300 text-sm mt-1">Leads Generated</p>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold">{metrics.clientsServed}</div>
-                <p className="text-gray-300 text-sm mt-1">Clinics Served</p>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold">{metrics.adSpendManaged}</div>
-                <p className="text-gray-300 text-sm mt-1">Ad Spend Managed</p>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold">${metrics.avgCostPerLead}</div>
-                <p className="text-gray-300 text-sm mt-1">Avg. CPL</p>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold">{metrics.avgRoi}</div>
-                <p className="text-gray-300 text-sm mt-1">Avg. ROI</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Client Logo Strip (Placeholder) */}
-      <section className="bg-gray-50 py-12 px-4">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-center text-gray-600 text-sm font-medium mb-8">Trusted by leading clinics</p>
-          <div className="flex flex-wrap justify-center gap-8 opacity-50">
-            <div className="text-gray-400 font-semibold">Elite Hair Restoration</div>
-            <div className="text-gray-400 font-semibold">Bright Smile Dental</div>
-            <div className="text-gray-400 font-semibold">+ {(metrics?.clientsServed || 0) - 2} more clinics</div>
-          </div>
+      {/* Founding Clients CTA Band */}
+      <section className="bg-gradient-to-r from-blue-50 to-indigo-50 py-16 px-4 border-t border-b border-indigo-200">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Now Accepting Founding Clients</h2>
+          <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+            We're taking on a limited number of hair transplant clinics and dental practices for our founding client program — hands-on strategy, full transparency on cost-per-lead and ROI, and a partnership built around real results.
+          </p>
+          <a
+            href="#cta-booking"
+            className="inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-indigo-700 transition text-lg"
+          >
+            Apply for a Founding Client Spot
+          </a>
         </div>
       </section>
 
@@ -123,8 +97,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured Case Study */}
-      {featuredCase && (
+      {/* Featured Case Study — Commented out until we have real client data */}
+      {/* {featuredCase && (
         <section className="bg-gray-50 py-16 px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold mb-12 text-center">Proven Results</h2>
@@ -185,10 +159,10 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-      )}
+      )} */}
 
-      {/* Testimonials Section */}
-      {testimonials.length > 0 && (
+      {/* Testimonials Section — Commented out until we have real client testimonials */}
+      {/* {testimonials.length > 0 && (
         <section className="py-16 px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">What Clinic Owners Say</h2>
@@ -219,7 +193,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-      )}
+      )} */}
 
       {/* Services Overview */}
       <section className="bg-gray-50 py-16 px-4">
@@ -266,14 +240,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA: Book a Call */}
-      <section className="bg-[color:var(--color-primary)] text-white py-16 px-4">
+      {/* CTA: Apply for Founding Client Spot */}
+      <section id="cta-booking" className="bg-[color:var(--color-primary)] text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-            Ready to Fill Your Calendar With Qualified Leads?
+            Ready to Start Your Lead Generation Journey?
           </h2>
           <p className="text-lg text-center mb-8 opacity-90">
-            Book a free 20-minute strategy call. We'll discuss your goals, analyze your current approach, and share exactly how we can help.
+            Get in touch with us to discuss how we can help your clinic fill the calendar with qualified, ready-to-buy leads. We'll analyze your current situation and share exactly how we can help.
           </p>
           <div className="max-w-xl mx-auto">
             <BookCallForm />
